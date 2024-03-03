@@ -66,7 +66,9 @@ header nav ul li a {
 
 .hero {
     /* margin-top: 150px; */
-
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background-image: url(./img/banniere4.jpg);
     padding: 15% 30%;
     object-fit: cover;
@@ -74,13 +76,23 @@ header nav ul li a {
 }
 
 .hero h1 {
-    width: 450px;
-    font-size: 2.3em;
+    width: 480px;
+    font-size: 2.5em;
     color: #000000;
     background: rgb(223, 222, 234, 0.6);
-    margin: auto;
+
     text-align: center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-transform: uppercase;
+}
 
+.hero input {
+    /* margin-top: 25px; */
+    color: blue;
+    font-weight: 500;
+    border: 1px solid grey;
+    background: gainsboro;
+    border-radius: 5px;
+    padding: 5px;
+    text-align: center;
 }
