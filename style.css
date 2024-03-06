@@ -42,7 +42,7 @@ header nav div a {
 header nav ul {
     list-style: none;
     /* background: red; */
-    width: 70%;
+    width: 80%;
     padding: 30px 10px;
     /* height: 85px; */
     display: flex;
@@ -53,7 +53,7 @@ header nav ul {
 
 header nav ul li {
     font-weight: 500;
-    margin: 0 1px;
+    /* margin: 0 1px; */
 }
 
 header nav ul li a {
@@ -143,4 +143,243 @@ header nav ul li a {
     width: 100%;
     margin-top: 5px;
     background-size: cover;
+}
+
+
+.apropos .row .image {
+    width: 50%;
+    height: 150px;
+    background-image: url(./img/c4.jpg);
+    background-size: cover;
+}
+
+.apropos {
+    background: rgb(179, 170, 170);
+    box-shadow: 2px 3px 4px black;
+    /* opacity: 0.8; */
+}
+
+.apropos .row {
+    padding: 10px;
+    margin: 10px;
+}
+
+.apropos h2 {
+    text-align: center;
+    font-size: 2.1em;
+}
+
+.contact {
+    border: 1px solid bisque;
+    box-shadow: 2px 3px 4px black;
+    margin-bottom: 10px;
+
+}
+
+.contact .row div {
+    max-width: 80%;
+    margin: 3px auto;
+}
+
+.contact .row form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    margin: 5px;
+}
+
+footer .row div {
+    width: 100%;
+    background: rgb(233, 226, 239);
+    text-align: center;
+    font-size: 15px;
+    height: 25px;
+    font-weight: 700;
+    /* padding: 1px 0; */
+}
+
+@media(max-width: 441px) {
+    /* .container {
+        position: relative;
+    } */
+
+    header {
+        position: relative;
+    }
+
+    header nav {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        margin: auto;
+    }
+
+    header nav div {
+        display: none;
+    }
+
+    header nav ul {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+
+
+    }
+
+    .hero h1 {
+        margin: 0 2px;
+        width: 100%;
+    }
+
+    header nav ul li {
+        margin-left: 25px;
+    }
+
+    .apropos {
+
+        /* position: absolute; */
+        background: rgb(179, 170, 170);
+        box-shadow: 2px 3px 4px black;
+        /* padding: 5px;
+            margin: 15px; */
+    }
+
+    .apropos .row {
+        padding: 10px;
+        margin: 10px;
+    }
+
+    .apropos .row .image {
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .contact .row {
+        /* position: absolute; */
+        padding: 1px;
+        margin: 10px;
+    }
+
+    .contact h2 {
+        text-align: center;
+    }
+
+    .contact .row form {
+        display: flex;
+        flex-direction: column;
+        margin: 0 10px;
+    }
+
+    .contact .row form label {
+        margin: 2px 0;
+    }
+
+    footer .row {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* footer .row div {
+        height: 150px;
+        width: 100%;
+        background: blueviolet;
+    } */
+
+    footer .row div {
+        width: 100%;
+        background: rgb(233, 226, 239);
+        text-align: center;
+        font-size: 15px;
+        height: 100px;
+        font-weight: 700;
+        padding: 5px 0;
+    }
+
+}
+
+@media(min-width:441px) and (max-width: 991px) {
+
+    header {
+        display: inline;
+        border-radius: 0 0 10px 10px;
+    }
+
+    header nav {
+        width: 100%;
+        padding-right: 10px;
+    }
+
+    header nav div {
+        display: none;
+    }
+
+    header nav ul li {
+        margin-left: 25px;
+    }
+
+    header nav ul {
+        margin: 0 15px;
+    }
+
+    .apropos {
+        background: rgb(179, 170, 170);
+        border-radius: 5px;
+        box-shadow: 2px 3px 4px black;
+        /* padding: 5px;
+        margin: 15px; */
+    }
+
+    .apropos .row {
+        padding: 10px;
+        margin: 10px;
+    }
+
+    .apropos .row .image {
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .contact {
+        border: 1px solid bisque;
+        box-shadow: 2px 3px 4px black;
+        margin-bottom: 5px;
+    }
+
+    .contact .row {
+        /* position: absolute; */
+        padding: 1px;
+        margin: 10px;
+    }
+
+    .contact h2 {
+        text-align: center;
+    }
+
+    .contact .row form {
+        display: flex;
+        flex-direction: column;
+        margin: 0 10px;
+    }
+
+    .contact .row form label {
+        margin: 2px 0;
+    }
+
+    footer .row {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    footer .row div {
+        width: 100%;
+        background: rgb(233, 226, 239);
+        text-align: center;
+        font-size: 25px;
+        font-weight: 700;
+        height: 40px;
+    }
+
 }
