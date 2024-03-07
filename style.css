@@ -116,6 +116,17 @@ header nav ul li a {
     box-shadow: 2px 3px 4px black;
 }
 
+.menu .row {
+    margin: 2px;
+    padding: 3px;
+    /* height: 700px; */
+    width: 100%;
+    /* background: red; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
 .titre_menu {
     text-align: center;
     font-size: 2.1em;
@@ -128,7 +139,7 @@ header nav ul li a {
     width: 100%;
     /* background: red; */
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: row;
     justify-content: center;
 }
 
@@ -237,6 +248,34 @@ footer .row div {
         margin-left: 25px;
     }
 
+
+
+    .menu {
+        /* width: 100%; */
+        background: rgb(228, 219, 236);
+        padding: 10px;
+        margin-top: 15px;
+        display: flex;
+        flex-direction: column;
+        border-radius: 5px;
+        box-shadow: 2px 3px 4px black;
+    }
+
+    .menu .row {
+        margin: 2px;
+        padding: 3px;
+        /* height: 700px; */
+        /* width: 100%; */
+        /* background: red; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .menu .row div {
+        width: 100%;
+    }
+
     .apropos {
 
         /* position: absolute; */
@@ -266,10 +305,10 @@ footer .row div {
         text-align: center;
     }
 
-    .contact .row form {
+    .contact .row div form {
         display: flex;
         flex-direction: column;
-        margin: 0 10px;
+        margin: 5px;
     }
 
     .contact .row form label {
@@ -381,5 +420,6 @@ footer .row div {
         font-weight: 700;
         height: 40px;
     }
+
 
 }
