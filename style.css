@@ -4,47 +4,64 @@
 }
 
 header {
-    /* margin-bottom: 10px; */
-    width: 100%;
-    /* height: 100px; */
     left: 0;
     top: 0;
-    position: fixed;
-    /* padding: 3px; */
-    border: 2px solid rgb(136, 119, 119);
+    padding: 10px;
+    /* border: 2px solid rgb(136, 119, 119); */
     background-color: #fff;
-    z-index: 1;
+}
+
+.dflex {
+    justify-content: center;
+    align-items: center;
+}
+
+.dflex div ul li a:hover {
+    cursor: pointer;
+    background-color: #e9b57d;
+    text-decoration: underline;
 
 }
 
-header nav {
-    display: flex;
+.dflex div ul {
+    padding-top: 5px;
+    text-align: center;
+}
+
+.element {
+    display: inline;
+
+}
+
+/* header nav {
+    /* display: flex;
     width: 100%;
     flex-direction: row;
-    padding: 3px;
-    /* background: green; */
-    /* height: 90px; */
+    padding: 3px; */
+/* background: green; */
+/* height: 90px; 
 }
 
 header nav div {
-    width: 30%;
+    /* width: 30%;
     padding: 30px 50px;
-    font-weight: 900;
-    /* background: rebeccapurple; */
-    margin-right: 2px;
+    font-weight: 900; */
+/* background: rebeccapurple; 
+margin-right: 2px;
 }
 
 header nav div a {
-    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3em;
 }
 
 
 header nav ul {
     list-style: none;
-    /* background: red; */
-    width: 80%;
-    padding: 30px 10px;
-    /* height: 85px; */
+    /* background: red; 
+width: 80%;
+padding: 30px 10px;
+/* height: 85px; 
     display: flex;
     justify-content: flex-end;
 
@@ -53,7 +70,7 @@ header nav ul {
 
 header nav ul li {
     font-weight: 500;
-    /* margin: 0 1px; */
+    /* margin: 0 1px; 
 }
 
 header nav ul li a {
@@ -62,7 +79,7 @@ header nav ul li a {
     background: gainsboro;
     border-radius: 5px;
     padding: 2px 3px;
-}
+}*/
 
 .hero {
     /* margin-top: 150px; */
@@ -221,23 +238,17 @@ footer .row div {
 
     header nav {
         width: 100%;
-        display: flex;
-        flex-direction: column;
+        display: none;
+        flex-direction: row;
         align-content: center;
         margin: auto;
     }
 
     header nav div {
-        display: none;
-    }
-
-    header nav ul {
-        width: 100%;
         display: flex;
-        flex-direction: row;
-
-
     }
+
+    header nav ul {}
 
     .hero h1 {
         margin: 0 2px;
@@ -340,9 +351,10 @@ footer .row div {
 
 @media(min-width:441px) and (max-width: 991px) {
 
-    header {
-        display: inline;
-        border-radius: 0 0 10px 10px;
+    header .dflex {
+        display: flex;
+        flex-direction: row;
+        /* border-radius: 0 0 10px 10px; */
     }
 
     header nav {
@@ -350,8 +362,20 @@ footer .row div {
         padding-right: 10px;
     }
 
-    header nav div {
-        display: none;
+    .dflex {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .dflex div ul li a:hover {
+        cursor: pointer;
+        background-color: #e9b57d;
+        text-decoration: underline;
+    }
+
+    .dflex div ul {
+        padding-top: 5px;
+        text-align: center;
     }
 
     header nav ul li {
