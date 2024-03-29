@@ -3,83 +3,39 @@
     padding: 0px;
 }
 
+body {
+    background: #f1dcc5;
+}
+
 header {
     left: 0;
     top: 0;
     padding: 10px;
     /* border: 2px solid rgb(136, 119, 119); */
-    background-color: #fff;
+    background-color: #eed4b8;
 }
 
-.dflex {
-    justify-content: center;
-    align-items: center;
-}
-
-.dflex div ul li a:hover {
-    cursor: pointer;
-    background-color: #e9b57d;
-    text-decoration: underline;
-
-}
-
-.dflex div ul {
-    padding-top: 5px;
+.row div .logo a {
     text-align: center;
 }
 
-.element {
-    display: inline;
-
-}
-
-/* header nav {
-    /* display: flex;
-    width: 100%;
-    flex-direction: row;
-    padding: 3px; */
-/* background: green; */
-/* height: 90px; 
-}
-
-header nav div {
-    /* width: 30%;
-    padding: 30px 50px;
-    font-weight: 900; */
-/* background: rebeccapurple; 
-margin-right: 2px;
-}
-
-header nav div a {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 3em;
-}
-
-
-header nav ul {
-    list-style: none;
-    /* background: red; 
-width: 80%;
-padding: 30px 10px;
-/* height: 85px; 
-    display: flex;
-    justify-content: flex-end;
-
-}
-
-
-header nav ul li {
-    font-weight: 500;
-    /* margin: 0 1px; 
-}
-
-header nav ul li a {
-    text-decoration: none;
-    border: 1px solid grey;
-    background: gainsboro;
+.row ul li {
+    border: 1px solid blue;
     border-radius: 5px;
-    padding: 2px 3px;
-}*/
+    padding: 0 5px;
+    background: #fff;
+}
+
+.row ul li a {
+    padding: 0 3px;
+    box-sizing: border-box;
+}
+
+
+.row ul li:hover {
+    background: #eee7df;
+    padding: 3px;
+}
 
 .hero {
     /* margin-top: 150px; */
@@ -227,28 +183,27 @@ footer .row div {
     /* padding: 1px 0; */
 }
 
-@media(max-width: 441px) {
+@media(max-width: 992px) {
     /* .container {
         position: relative;
     } */
 
-    header {
+    /* header {
         position: relative;
-    }
-
-    header nav {
-        width: 100%;
-        display: none;
-        flex-direction: row;
-        align-content: center;
-        margin: auto;
-    }
+    } */
 
     header nav div {
+        width: 100%;
         display: flex;
+        flex-direction: column;
+
     }
 
-    header nav ul {}
+    header nav div ul {
+        text-align: center;
+        margin: 5px 0;
+    }
+
 
     .hero h1 {
         margin: 0 2px;
